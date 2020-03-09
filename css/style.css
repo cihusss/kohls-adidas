@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+.GoogleActiveViewElement {
+  width: 100%;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#ad {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+#left {
+  box-sizing: border-box;
+  background: #f3f3f3;
+  color: #212121;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  padding: 2rem 2.5rem;
+  align-items: center;
+}
+
+#right {
+  box-sizing: border-box;
+  background: red;
+  height: 100%;
+  width: 50%;
+  background: url(https://staging-adlabs.triadretail.net/flynamic/kohls/adidas-rmb-dyn/img/lifestyle-w.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem;
+  color: #222;
+  text-decoration: none;
+}
+
+
+#logo {
+  /* align-self: center; */
+  /* margin: 0 4vw 0 0; */
+  width: 4rem;
+  position: absolute;
+  left: 20px;
+  bottom: 14px;
+}
+
+#headline {
+  font-size: 3.2vw;
+  line-height: 3.2vw;
+  font-weight: bold;
+  /* margin: 0 6rem 0 0; */
+}
+
+#subhead {
+  font-size: 1.6vw;
+  margin: .8rem 0 2rem 0;
+  line-height: 1.5vw;
+}
+
+#printerhero {
+  align-self: center;
+  width: 50%;
+}
+
+#ctawrap {
+  display: flex;
+  align-items: flex-end;
+
+}
+
+#copywrap {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.button {
+  width: auto;
+  padding: 1rem 1.6rem;
+  font-size: .75rem;
+  line-height: 1.2rem;
+  border: none;
+  text-align: center;
+  line-height: 1.4em;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #212121;
+  transition: .3s background;
+}
+
+.button:hover {
+  background: #00A0A0;
+}
+
+#panel {
+  width: 100%;
+  display: none;
+  position: absolute;
+  height: auto;
+  background: #f7f7f7;
+  z-index: 101;
+  left: 0;
+}
+
+#contentwrap {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#panelimg {
+  width: 100%;
+}
+
+#videowrap {
+  width: 100%;
+  overflow: hidden;
+  background: #E5E5E5;
+  display: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+#close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 48px;
+  transition: .3s color;
+}
+
+#close:hover {
+   color: #00A0A0; 
+}
+
+#btnshop {
+  position: absolute;
+  bottom: 1.6rem;
+  left: 12rem;
+  width: 5rem;
+  opacity: 0;
+}
+
+#btnlearn {
+  position: absolute;
+  bottom: 1.6rem;
+  left: 24.5rem;
+  width: 5rem;
+  opacity: 0;
+}
+
+#expand {
+  font-size: 80px;
+  margin: 0 5vw 0 0;
+  cursor: pointer;
+  transition: .3s color;
+}
+
+#expand:hover {
+  color: #00A0A0 !important;
+}
+
+.jw-title-primary, .jw-title-secondary {
+  display: none;
+}
+
+.jw-icon-fullscreen {
+  display: none;
+}
+
+.pixel {
+  display: none;
+}
+
+#ecommwrap {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  bottom: 4rem;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  /* flex-direction: row; */
+  justify-content: center;
+}
+
+#down, #up {
+    position: absolute;
+    top: -41px;
+    font-size: 48px;
+    color: white;
+    transition: .3s color;
+    cursor: pointer;
+}
+
+#up { display: none; }
+
+#down:hover, #up:hover {
+  color: #00A0A0;
+}
+
+.prod {
+  position: relative;
+  width: 20%;
+  background: white;
+  margin: 4px;
+  border: 3px solid #EDEEF0;
+  transition: .1s all;
+}
+
+.prod:hover {
+  border: 3px solid #00A0A0;
+  margin-top: -5px;
+}
+
+.prod img {
+  width: 100%;
+  display: flex;
+}
+
+.prod span {
+  position: absolute;
+  color: #222;
+  right: 4px;
+  bottom: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#dfp_globalheader_marquee_ad {
+  width: 100% !important;
+  max-width: 1280px;
+}
+
+.z1-opt-in-collapsed-box {
+  overflow: hidden;
+}
+
+#gender {
+  display: none;
+}
+
+@media all and (min-width: 1100px) {
+  #headline {font-size: 2.2rem;line-height: 2.2rem;margin-right: 0;}
+  #subhead {font-size: 1.2rem;/* line-height: 1.4rem; */}
+}
+
+@media all and (max-width: 660px) {
+  #right { justify-content: center; }
+  #expand {margin: 0;font-size: 100px;/* color: white; */}
+  #logo { width: 3rem; }
+  #headline { margin: 0; font-size: 4vw; line-height: 4vw; }
+  #subhead {font-size: 2vw; line-height: 2vw;}
+}
+
+@media all and (max-width: 800px) {
+  #ecommwrap { display: none; }
+}
+
+@media all and (max-width: 480px) {
+  #ad { display: none; }
+}
